@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      working-directory: carrot-protocol-cpi
 
     steps:
       - name: Checkout code
