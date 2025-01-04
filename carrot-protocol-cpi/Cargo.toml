@@ -1,0 +1,16 @@
+[package]
+name = "carrot-protocol-cpi"
+version = "0.1.0"
+description = "CPI Bindings for Carrot Protocol"
+edition = "2021"
+
+[features]
+default = ["cpi"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+
+[dependencies]
+anchor-gen = "0.3.1"
+anchor-lang = "0.28"
