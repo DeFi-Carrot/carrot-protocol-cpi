@@ -1,0 +1,31 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+example = "9KoNuRAqLjM3141SaREdHC7GChbWp3KffcyVGHrspAPV"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/jack/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test.validator]
+bind_address = "127.0.0.1"
+url = "https://trashpandas.rpcpool.com/896a4208af08c479e8cf62e109f1"
+ledger = ".anchor/test-ledger"
+rpc_port = 8899
+startup_wait = 30000
+
+[[test.genesis]]
+address = "CarrotwivhMpDnm27EHmRLeQ683Z1PufuqEmBZvD282s"
+program = "./carrot.so"
+
+# carrot log
+[[test.genesis]]
+address = "7Mc3vSdRWoThArpni6t5W4XjvQf4BuMny1uC8b6VBn48"
+program = "./carrot-log.so"
