@@ -3,6 +3,7 @@ name = "carrot-protocol-cpi"
 version = "0.1.0"
 description = "CPI Bindings for Carrot Protocol"
 edition = "2021"
+license = "MIT"
 
 [features]
 default = ["cpi"]
