@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./examples/example/programs/example/Cargo.toml",
+        "./carrot-protocol-cpi/Cargo.toml"
+    ]
+}

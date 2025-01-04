@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - '*'
+    paths:
+      - 'carrot-protocol-cpi/**'
 
 jobs:
   build:
@@ -35,3 +37,7 @@ jobs:
           path: ./carrot-protocol-cpi
           registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
           dry-run: ${{ github.ref != 'refs/heads/main' }}
+
+      - name: Run publish script
+        run: |
+          echo "Publishing changes..."
