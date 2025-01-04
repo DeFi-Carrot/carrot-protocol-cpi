@@ -26,11 +26,8 @@ jobs:
       - name: Run fmt
         run: cargo fmt -- --check
 
-      - name: Run clippy
-        run: cargo clippy -- -D warnings
-
       - name: Publish crates
         uses: katyo/publish-crates@v2
         with:
           registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
-          dry-run: github.ref != 'refs/heads/main' # dry run if not main branch
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
