@@ -15,7 +15,7 @@ CPI Bindings for Carrot Protocol
 
 `carrot-protocol-cpi` is generated using `anchor-gen` and the idl fetched from the on chain account
 
-### examples
+### example
 
 small anchor program pulling in `carrot-protocol-cpi` for a test cpi
 
