@@ -1,6 +1,6 @@
 [package]
 name = "carrot-protocol-cpi"
-version = "0.1.0"
+version = "0.1.1"
 description = "CPI Bindings for Carrot Protocol"
 edition = "2021"
 license = "MIT"
