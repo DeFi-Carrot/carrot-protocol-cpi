@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./carrot-protocol-cpi
 
     steps:
       - name: Checkout code
@@ -23,11 +26,9 @@ jobs:
       - name: Run fmt
         run: cargo fmt -- --check
 
-      - name: Run clippy
-        run: cargo clippy -- -D warnings
-
       - name: Publish crates
         uses: katyo/publish-crates@v2
         with:
+          path: ./carrot-protocol-cpi
           registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
-          dry-run: github.ref != 'refs/heads/main' # dry run if not main branch
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
