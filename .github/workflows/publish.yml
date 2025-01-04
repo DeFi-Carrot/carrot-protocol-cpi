@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     concurrency:
-      group: build-${{ github.ref }}
+      group: build-${{ github.ref }} # allow 1 build per branch at a time
       cancel-in-progress: false
     runs-on: ubuntu-latest
     defaults:
