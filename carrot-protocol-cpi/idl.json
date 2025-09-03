@@ -2367,6 +2367,539 @@
       "args": []
     },
     {
+      "name": "clendSupplyStrategyInit",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "strategy",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "assetMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendAccount",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "clendBank",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendBankLiquidityVault",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendBankLiquidityVaultAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendOracle",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "ClendSupplyStrategyInitArgs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "clendSupplyStrategyDeposit",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "assetMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultAssetAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "strategy",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clendBank",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clendBankLiquidityVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "logProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "ClendSupplyStrategyDepositArgs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "clendSupplyStrategyWithdraw",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "assetMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultAssetAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "strategy",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendGroup",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clendBank",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clendBankLiquidityVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "clendBankLiquidityVaultAuthority",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "clendProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "logProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "ClendSupplyStrategyWithdrawArgs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "juplendSupplyStrategyInit",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "strategy",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "assetMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendFTokenCarrotVaultReserve",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendFTokenMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "JuplendSupplyStrategyInitArgs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "juplendSupplyStrategyDeposit",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "assetMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultAssetAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "strategy",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLendingAdmin",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLendingAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendFTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendFTokenCarrotVaultReserve",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendSupplyTokenReservesLiquidity",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLendingSupplyPositionOnLiquidity",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendRateModel",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLiquidity",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendRewardsRateModel",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "juplendLiquidityProgram",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendEarnProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "logProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "JuplendSupplyStrategyDepositArgs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "juplendSupplyStrategyWithdraw",
+      "accounts": [
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "assetMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultAssetAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "strategy",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLendingAdmin",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLendingAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendFTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendFTokenCarrotVaultReserve",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendSupplyTokenReservesLiquidity",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLendingSupplyPositionOnLiquidity",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendRateModel",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "juplendVault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendClaimAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendLiquidity",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendRewardsRateModel",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "juplendLiquidityProgram",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "juplendEarnProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "assetTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "logProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "JuplendSupplyStrategyWithdrawArgs"
+          }
+        }
+      ]
+    },
+    {
       "name": "chestStrategyInit",
       "accounts": [
         {
@@ -2729,7 +3262,14 @@
           "isSigner": false
         }
       ],
-      "args": []
+      "args": [
+        {
+          "name": "args",
+          "type": {
+            "defined": "ChestStrategyWithdrawArgs"
+          }
+        }
+      ]
     },
     {
       "name": "updateSwitchboardOraclePrice",
@@ -2879,6 +3419,14 @@
           {
             "name": "amount",
             "type": "u64"
+          },
+          {
+            "name": "failOnLowBalance",
+            "type": "bool"
+          },
+          {
+            "name": "preserveRecordedBalance",
+            "type": "bool"
           }
         ]
       }
@@ -2902,6 +3450,58 @@
         "fields": [
           {
             "name": "assetAmount",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChestStrategyWithdrawArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "failOnLowBalance",
+            "type": "bool"
+          },
+          {
+            "name": "preserveRecordedBalance",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClendSupplyStrategyDepositArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "amount",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClendSupplyStrategyInitArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClendSupplyStrategyWithdrawArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "amount",
             "type": "u64"
           }
         ]
@@ -2975,6 +3575,10 @@
           {
             "name": "driftMarketIndex",
             "type": "u16"
+          },
+          {
+            "name": "driftPoolId",
+            "type": "u8"
           }
         ]
       }
@@ -3013,6 +3617,42 @@
     },
     {
       "name": "IssueArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "amount",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JuplendSupplyStrategyDepositArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "amount",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JuplendSupplyStrategyInitArgs",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JuplendSupplyStrategyWithdrawArgs",
       "type": {
         "kind": "struct",
         "fields": [
@@ -3556,11 +4196,11 @@
                 "type": "publicKey"
               },
               {
-                "name": "bank_liquidity_vault",
+                "name": "bankLiquidityVault",
                 "type": "publicKey"
               },
               {
-                "name": "bank_liquidity_vault_authority",
+                "name": "bankLiquidityVaultAuthority",
                 "type": "publicKey"
               },
               {
@@ -3577,23 +4217,23 @@
                 "type": "publicKey"
               },
               {
-                "name": "reserve_collateral_mint",
+                "name": "reserveCollateralMint",
                 "type": "publicKey"
               },
               {
-                "name": "reserve_liquidity_supply",
+                "name": "reserveLiquiditySupply",
                 "type": "publicKey"
               },
               {
-                "name": "reserve_destination_deposit_collateral",
+                "name": "reserveDestinationDepositCollateral",
                 "type": "publicKey"
               },
               {
-                "name": "reserve_farm_state",
+                "name": "reserveFarmState",
                 "type": "publicKey"
               },
               {
-                "name": "lending_market",
+                "name": "lendingMarket",
                 "type": "publicKey"
               },
               {
@@ -3601,7 +4241,7 @@
                 "type": "publicKey"
               },
               {
-                "name": "scope_prices",
+                "name": "scopePrices",
                 "type": "publicKey"
               }
             ]
@@ -3614,31 +4254,31 @@
                 "type": "publicKey"
               },
               {
-                "name": "reserve_collateral_mint",
+                "name": "reserveCollateralMint",
                 "type": "publicKey"
               },
               {
-                "name": "reserve_liquidity_supply",
+                "name": "reserveLiquiditySupply",
                 "type": "publicKey"
               },
               {
-                "name": "deposit_collateral_ata",
+                "name": "depositCollateralAta",
                 "type": "publicKey"
               },
               {
-                "name": "lending_market",
+                "name": "lendingMarket",
                 "type": "publicKey"
               },
               {
-                "name": "lending_market_authority",
+                "name": "lendingMarketAuthority",
                 "type": "publicKey"
               },
               {
-                "name": "pyth_oracle",
+                "name": "pythOracle",
                 "type": "publicKey"
               },
               {
-                "name": "switchboard_oracle",
+                "name": "switchboardOracle",
                 "type": "publicKey"
               }
             ]
@@ -3663,11 +4303,11 @@
                 "type": "publicKey"
               },
               {
-                "name": "pyth_oracle",
+                "name": "pythOracle",
                 "type": "publicKey"
               },
               {
-                "name": "switchboard_oracle",
+                "name": "switchboardOracle",
                 "type": "publicKey"
               }
             ]
@@ -3684,31 +4324,31 @@
                 "type": "publicKey"
               },
               {
-                "name": "spot_market",
+                "name": "spotMarket",
                 "type": "publicKey"
               },
               {
-                "name": "spot_market_vault",
+                "name": "spotMarketVault",
                 "type": "publicKey"
               },
               {
-                "name": "perp_market",
+                "name": "perpMarket",
                 "type": "publicKey"
               },
               {
-                "name": "spot_pyth_oracle",
+                "name": "spotPythOracle",
                 "type": "publicKey"
               },
               {
-                "name": "perp_pyth_oracle",
+                "name": "perpPythOracle",
                 "type": "publicKey"
               },
               {
-                "name": "sub_account_id",
+                "name": "subAccountId",
                 "type": "u16"
               },
               {
-                "name": "market_index",
+                "name": "marketIndex",
                 "type": "u16"
               }
             ]
@@ -3721,15 +4361,15 @@
                 "type": "publicKey"
               },
               {
-                "name": "spot_market",
+                "name": "spotMarket",
                 "type": "publicKey"
               },
               {
-                "name": "spot_market_vault",
+                "name": "spotMarketVault",
                 "type": "publicKey"
               },
               {
-                "name": "market_index",
+                "name": "marketIndex",
                 "type": "u16"
               }
             ]
@@ -3746,26 +4386,64 @@
                 "type": "publicKey"
               },
               {
-                "name": "drift_vault",
+                "name": "driftVault",
                 "type": "publicKey"
               },
               {
-                "name": "coin_token_account",
+                "name": "coinTokenAccount",
                 "type": "publicKey"
               },
               {
-                "name": "asset_destination",
+                "name": "assetDestination",
                 "type": "publicKey"
               },
               {
-                "name": "redemption_request",
+                "name": "redemptionRequest",
                 "type": {
                   "option": "publicKey"
                 }
               },
               {
-                "name": "spot_market_index",
+                "name": "spotMarketIndex",
                 "type": "u16"
+              }
+            ]
+          },
+          {
+            "name": "ClendSupply",
+            "fields": [
+              {
+                "name": "account",
+                "type": "publicKey"
+              },
+              {
+                "name": "group",
+                "type": "publicKey"
+              },
+              {
+                "name": "bank",
+                "type": "publicKey"
+              },
+              {
+                "name": "bankLiquidityVault",
+                "type": "publicKey"
+              },
+              {
+                "name": "bankLiquidityVaultAuthority",
+                "type": "publicKey"
+              },
+              {
+                "name": "oracle",
+                "type": "publicKey"
+              }
+            ]
+          },
+          {
+            "name": "JuplendSupply",
+            "fields": [
+              {
+                "name": "fTokenCarrotVaultReserve",
+                "type": "publicKey"
               }
             ]
           }
@@ -3797,6 +4475,12 @@
           },
           {
             "name": "Chest"
+          },
+          {
+            "name": "ClendSupply"
+          },
+          {
+            "name": "JuplendSupply"
           }
         ]
       }
@@ -3988,6 +4672,16 @@
       "code": 6020,
       "name": "MathError",
       "msg": "Math Error"
+    },
+    {
+      "code": 6021,
+      "name": "ChestLowBalance",
+      "msg": "Chest Low Balance"
+    },
+    {
+      "code": 6022,
+      "name": "BalanceNotFound",
+      "msg": "Balance Not Found"
     }
   ]
 }
