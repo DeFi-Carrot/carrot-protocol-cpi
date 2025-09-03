@@ -19,13 +19,8 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Rust
-        uses: actions-rs/setup-rust@v1
-        with:
-          toolchain-file: ./carrot-protocol-cpi/rust-toolchain.toml
-          override: true
+        uses: actions/checkout@v5
+        uses: dtolnay/rust-toolchain@stable
 
       - name: Run fmt
         run: cargo fmt --manifest-path ./carrot-protocol-cpi/Cargo.toml -- --check
